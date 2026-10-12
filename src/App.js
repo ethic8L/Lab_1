@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Message from './Message';
+import Power from './Power';
+import Complex from './Complex';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{ padding: '20px' }}>
+      <h1>Lab1 – React</h1>
+
+      {/* Zadanie 3a i 3b */}
+      <Message text="Witaj w aplikacji React!" />
+
+      {/* Zadanie 3c */}
+      <Power />
+
+      {/* Zadanie 3d */}
+      <Complex />
     </div>
   );
 }
